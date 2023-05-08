@@ -1,0 +1,180 @@
+:root{
+    --main-amarillo: #EAC926;
+    --main-azul: #03264C;
+    --main-celeste: #1259c3;
+    --main-gris-oscuro: #666;
+    --main-gris-claro: #ebebeb;
+    --main-verde: ##39b54a;
+    --main-tipo-texto: 12px;
+    --main-tipo-titulares: 24px;
+    --main-tipo-precios: 18px;
+    --main-tipo-descuentos: 16px;
+    --main-tipo-descripciones: 16px;
+    font-family: 'Roboto';
+}
+
+header{
+    background-color: var(--main-amarillo);
+    padding-bottom: 1em;
+}
+
+.logotipo{
+    width: 7em;
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+.buscador{
+    margin-left: 1.3em;
+    height: 1em;
+    margin-bottom: 0.2em;
+}
+
+#buscar-producto{
+    width: 14em;
+    height: 1em;
+    font-size: 14px; 
+    
+}
+
+#buscar-producto, ::placeholder{
+    font-size: var(--main-tipo-texto);
+}
+
+.search {
+    margin-left: 1em;
+    margin-top: 0.5em;
+    border-color: #000000;
+    border-width: 1px ;
+    border-style: solid;
+    background-color: #ffffff;
+    width: 1em;
+    height: 1em;
+}
+
+#logo-lupa{
+    font-size: 0.8em;
+    display: inline-block;
+    color: #000000;
+    margin-left: .15em;
+    margin-top: .15em;
+       
+}
+#logo-mano{
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul{
+    font-size: var(--main-tipo-texto);
+    color: var(--main-gris-oscuro);
+    padding: 0;
+}
+
+a, .fa-regular .fa-id-card{
+    height: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+a, .fa-solid .fa-right-to-bracket{
+    height: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+a, .fa-solid .fa-basket-shopping{
+    height: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.compra-en-cuotas {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-size: var(--main-tipo-texto);
+    font-weight: 500;
+    color: #000000;
+}
+
+.burger-menu{
+    background-color: var(--main-celeste);
+    width: 2.4em;
+    height: 2.4em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: .3em;
+    color: var(--main-gris-claro);
+}
+
+#logo-burguer{
+    color: #ebebeb;
+/*    width: 1em;
+    height: 1em;  
+    size: 2em;  */
+    font-size: 1.3em;
+    margin-left:.45em;
+    margin-top: .45em;
+/*    margin-right: auto;
+    margin-bottom: auto;*/
+    
+}
+footer{
+    text-align: center;
+    font-size: var(--main-tipo-titulares);
+}
+h4{
+    font-size: var(--main-tipo-descripciones);
+    font-weight: 700;
+    color: var(--main-gris-oscuro);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+footer, p{
+    font-size: var(--main-tipo-texto);
+    color: var(--main-gris-oscuro);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 25px;
+    width: 85%;
+}
+
+/*#icono-footer*/
+footer, .fa-solid .fa-id-card{
+    font-size: 1.3em;
+    color: var(--main-celeste);
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+footer, .fa-solid .fa-right-to-bracket{
+    font-size: 1.3em;
+    color: var(--main-celeste);
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+footer, .fa-solid .fa-basket-shopping{
+    font-size: 1.3em;
+    color: var(--main-celeste);
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.copyright{
+    margin-left: 0;
+    text-align: left;
+    width: 100%;
+}
