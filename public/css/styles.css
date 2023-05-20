@@ -1,10 +1,10 @@
-/*:root{
+/*:root {
     --main-amarillo: #EAC926;
     --main-azul: #03264C;
     --main-celeste: #1259c3;
     --main-gris-oscuro: #666;
     --main-gris-claro: #ebebeb;
-    --main-verde: ##39b54a;
+    --main-verde: #39b54a;
     --main-tipo-texto: 12px;
     --main-tipo-titulares: 24px;
     --main-tipo-precios: 18px;
@@ -12,93 +12,423 @@
     --main-tipo-descripciones: 16px;
     font-family: 'Roboto';
 }*/
-body{
+
+body {
     margin: 0;
     --main-amarillo: #EAC926;
     --main-azul: #03264C;
     --main-celeste: #1259c3;
     --main-gris-oscuro: #666;
     --main-gris-claro: #ebebeb;
-    --main-verde: ##39b54a;
+    --main-verde: #39b54a;
     --main-tipo-texto: 12px;
     --main-tipo-titulares: 24px;
     --main-tipo-precios: 18px;
     --main-tipo-descuentos: 16px;
     --main-tipo-descripciones: 16px;
-    font-family: 'Roboto';
+    font-family: 'Roboto' , sans-serif;
 }
 
-header{
-    background-color: var(--main-amarillo);   
+header {
+        background-color: var(--main-amarillo);  
+        width: 100%; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 }
 
-header .logotipo{
-    display: block;
-    width: 7em;    
-}
-
-header #buscar-producto{    
-    font-size: 14px;
-    color: var(--main-gris-oscuro);
-    border: 2px solid #000;
+header .linkMercadoLiebre {
+    width: 50%;
     
 }
 
-header .search #logo-lupa{
+.logotipo {
+    width: 90%; 
+    padding: 15px 0 15px 5%;  
+      
+}
+
+header .buscador {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+header .buscador input {    
+    font-size: 14px;
     background-color: #ffffff;
-    border: 2px solid #000;
-    font-size: var(--main-tipo-texto);    
-    color: #000;       
+    color: var(--main-gris-oscuro);
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    height: 35px;
 }
 
-header .compra-en-cuotas{
+header .buscador .search i {
+    background-color: #ffffff;
+/*    border: 2px solid #000000; */
+    font-size: var(--main-tipo-descuentos);    
+    color: var(--main-gris-oscuro);  
+    position: absolute;
+    right: 10%;      
+    top: 7.5vw; 
+}
+
+header .compra-en-cuotas {
+    width: 100%;
+    font-size: var(--main-tipo-texto);  
+    font-weight: 700; 
+    color: var(--main-gris-oscuro); 
     text-align: center;
-    color: #000;
-    font-size: var(--main-tipo-texto);
-    font-weight: 500;
 }
 
-header nav ul a{
+header nav {
+    display: none;
+    
+}
+
+
+
+header nav ul {
+    width: 45%;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: space-evenly;  
+    min-width: 370px; 
+}
+
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
     text-decoration: none;
-    color: #000;
-    font-size: var(--main-tipo-texto);
-    font-weight: 500;    
+    color: var(--main-gris-oscuro);
+    font-size: var(--main-tipo-texto);  
+    font-weight: 700;
 }
 
-header .burger-menu{
+header nav .login {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+header div.burger-menu {
     text-align: center;
 }
 
-header div #logo-burguer{
+header div.burger-menu i {
     background-color: var(--main-celeste);
-    color: #fff;
-    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
     padding: 10px;
     border-radius: 5px; 
+    margin: 10px 0 20px 0;
 }
 
-footer{
+.banner .img-banner {
+    width: 100vw;   
+    margin-bottom: -4px; 
+}
+
+/*  --------------Formularios----------------*/
+
+main .forms {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main .forms form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+main .forms form p {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;    
+}
+
+main .forms form p label {
+    text-align: left;
+    width: 100%;        
+}
+
+main .forms form div.usr {
+    margin: 0;
+    display: flex;
+    flex-direction: column;    
+}
+
+main .forms form div.usr label {
+    text-align: left;
+}
+
+main .forms form div.usr .user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+           
+}
+
+main .forms form div {
+    display: flex;
+    justify-content: space-between; 
+    margin-left: 15px;
+}
+
+main .forms form div p {
+    text-align: left;
+    width: 90%;
+}
+
+
+
+/*
+main .forms form .intereses {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main .forms form .intereses  div {
+    display: block;
+    text-align: left;
+    color: #39b54a;
+}
+
+*/
+
+
+/* --------------------------------------------------------*/
+
+footer {
     text-align: center;
 }
 
-footer i{
+footer i {
     font-size: 2em;
     color: var(--main-celeste);
     margin-bottom: 10px;
 }
-footer h4{
+footer h4 {
     font-size: var(--main-tipo-descripciones);
     font-weight: 700;
     color: var(--main-gris-oscuro);
 }
 
-footer p{
+footer p {
     font-size: var(--main-tipo-texto);
     color: var(--main-gris-oscuro);
 }
 
-footer .copyright{
+footer .copyright {
     font-size: var(--main-tipo-texto);
     text-align: left;
 }
+
+
+main {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    background-color: var(--main-gris-claro);
+}
+
+main section {
+    text-align: center;
+    margin: auto;
+    background-color: var(--main-gris-claro);
+}
+
+main section .titulo {
+    width: 100%;
+    padding: 5px 0 10px 0;
+    background-color: var(--main-gris-claro);
+}
+
+main .titulo h3 {
+    text-align: left;
+    font-size: var(--main-tipo-titulares);
+    color: var(--main-gris-oscuro);
+    margin: 0;
+    padding: 10px 0 10px 5%;
+    background-color: var(--main-gris-claro);
+}
+
+main section section.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main section section.galeria article {
+    margin-bottom: 10px;
+    background-color: var(--main-gris-claro);
+} 
+
+main section article .articulo {
+    margin: auto;
+    width: 90%;
+    background-color: #ffffff;
+}
+
+main section article .articulo img {
+    margin: auto;
+    width: 90%;
+}
+
+main section article .articulo .detalle-articulo {
+    border-top: solid 1px var(--main-gris-claro);
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Esto es haciendo el circulo en el div y acompdando
+con padding el ícomo  */
+
+/*
+.circulo {
+    width: 40px;
+    height: 40px;
+    border: solid 1px var(--main-verde);
+    border-radius: 20px;
+    color: var(--main-verde);
+}
+main section article .articulo .detalle-articulo .circulo i {
+    padding: 7px 9px 0 0;
+}    */
+
+
+/* Todo en el ícono */
+/*
+main section article .articulo .detalle-articulo .circulo i {
+    color: var(--main-verde);
+    width: 40px;
+    height: 40px;
+    padding: 7px 10px 3px 0px;
+    border: solid 1px var(--main-verde);
+    border-radius: 50%;
+}   */
+
+/* Icono centrado según la clase  */
+
+
+main section article .articulo .detalle-articulo i {
+    color: var(--main-verde);   
+
+    display: block;
+    font-size: 16px;    
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px var(--main-verde);
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+}
+
+
+
+
+main section article .articulo .detalle-articulo .precios {
+    margin: 0;
+    padding: 10px 0;
+    width: 30%;
+    font-size: var(--main-tipo-precios);
+    font-weight: 700;
+    text-align: left;
+}
+
+main section article .articulo .detalle-articulo .descuentos {
+    margin: 0;
+    padding: 10px 0;
+    color: var(--main-verde);
+    font-size: var(--main-tipo-descuentos);
+    font-weight: 700;
+    width: 70%;
+    text-align: left
+}
+
+main section article .articulo .detalle-articulo .desc-producto {
+    display: none;
+    margin: 0;
+    padding: 10px 0;
+    color: var(--main-gris-oscuro);
+    font-size: var(--main-tipo-descuentos);
+}
+
+@media (min-width : 361px) {
+    main section article .articulo .detalle-articulo .desc-producto {
+        display: block; 
+    }
+
+    main section article .articulo {
+        box-shadow: 0 0 4px 4px rgba(100, 100, 100, .5); 
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header div.burger-menu {
+        display: none;
+    }
+
+    header .linkMercadoLiebre {
+        width: 29%;
+        
+    }
+
+    
+    header .buscador {
+        width: 33%;
+        justify-content: space-around;
+    }
+    header .compra-en-cuotas {
+        width: 33%;
+        align-self: center;
+    }
+
+    header .buscador input {    
+        width: 80%;
+        height: 25px;
+    }
+
+    header .buscador .search i {
+        position: unset; 
+        border: 1px solid #000000;
+        align-self: center;
+        padding: 2px;
+    }
+
+    main section section.galeria article {
+        width: 45%;
+    } 
+    
+}
+
+@media (min-width : 769px) {
+    main section section.galeria article {
+        width: 22.5%;
+    } 
+    
+    }
+
+   
 
