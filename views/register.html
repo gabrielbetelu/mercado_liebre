@@ -59,71 +59,92 @@
         </div>     
     </header>    
     <main>
-        <div class="forms">
-            <form action="/registro" method="POST" class="registro">
-                <p>
+<!--        <div class="forms">   -->
+            <form class="forms" action="/registro" method="POST" class="registro">
+                <div>
             <!--        <label>Nombre y Apellido:</label> -->
-                    <input type="text" name="nombreCompleto" placeholder="Nombre y apellido">
-                </p>
-                <p>
+                    <input class="campoTexto" type="text" name="nombreCompleto" placeholder="Nombre y apellido" id="nombreCompleto">
+                </div>
+                <div>
             <!--        <label>Nombre de Usuario:</label> -->
-                    <input type="text" name="usuario" placeholder="Nombre de usuario">
-                </p>
-                <p>
-                    <!--        <label>Nombre de Usuario:</label> -->
-                            <input type="email" name="usuario" placeholder="E-mail">
-                </p>
-                <p>
-                    <label>Fecha de Nacimiento</label>
-                    <input type="date" name="fechaNacimiento">
-                </p>
-                <p>
-            <!--        <label>Dirección:</label> -->
-                    <input type="text" name="direccion" placeholder="Domicilio">
-                </p>
+                    <input class="campoTexto" type="text" name="usuario" placeholder="Nombre de usuario" id="usuario">
+                </div>
+                <div>
+            <!--        <label>Nombre de Usuario:</label> -->
+                    <input class="campoTexto" type="email" name="emailUsuario" placeholder="E-mail">
+                </div>
+                <div>
+                    <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                    <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+                </div>
+                <div>
+            <!--        <label>Domicilio:</label> -->
+                    <input class="campoTexto" type="texto"  name="domicilio" placeholder="Domicilio" id="domicilio">
+                </div>
                 <div class="usr">
-                    <label>Perfil de usuario</label>
-                    <p class="user">
-                        <input type="radio" name="perfilUsuario" value="comprador">Comprador
-                        <input type="radio" name="perfilUsuario" value="vendedor">Vendedor
-                    </p>
+                    <h3>Perfil de usuario</h3>
+                    <div class="user">
+                        <div>
+                            <input type="radio" name="perfilUsuario" value="comprador" id="comprador">
+                            <label for="comprador">Comprador</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="perfilUsuario" value="vendedor" id="vendedor">
+                            <label for="vendedor">Vendedor</label>
+                        </div>
+                        
+                    </div>
                     
                 </div>
-                <p class="intereses">
-                    <label>Intereses</label>
-                    <div><input type="checkbox" name="intereses" value="electro"><p>Electro</p></div>
-                    <div><input type="checkbox" name="intereses" value="moda"><p>Moda</p></div>
-                    <div><input type="checkbox" name="intereses" value="hogar"><p>Hogar</p></div>
-                    <div><input type="checkbox" name="intereses" value="jugueteria"><p>Juguetería</p></div>
-                    <div><input type="checkbox" name="intereses" value="vida-sana"><p>Visa Sana</p></div>  
-                </p>
-                <p>
-                    <label>Foto de usuario</label>
-                    <input type="file" name="fotolUsuario" accept=".jpg, .png">                
-                </p>
-                <p>
-                    <!-- <label>Ingresar Contraseña:</label> -->
-                    <input type="password" name="contraseña" placeholder="Ingresar contraseña">
-                </p>
-                <p>
-                    <!-- <label>Repetir Contraseña:</label> -->
-                    <input type="password" name="contraseña" placeholder="Repetir contraseña">
-                </p>
-                <p>
-                    <button type="submit">Enviar</button>
-                </p>
-                <p>
-                    <button type="reset">Borrar</button>
-                </p>
-    
-    
-    
-    
-    
+                <div class="intereses">
+                    <h3>Intereses</h3>
+                    <div class="opciones-intereses">
+                        <div>
+                            <input type="checkbox" name="intereses" value="electro" id="electro">
+                            <label for="electro">Electro</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="intereses" value="moda" id="moda">
+                            <label for="moda">Moda</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="intereses" value="hogar" id="hogar">
+                            <label for="hogar">Hogar</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="intereses" value="jugueteria" id="jugueteria">
+                            <label for="jugueteria">Juguetería</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="intereses" value="vidaSana" id="vidaSana">
+                            <label for="vidaSana">Vida Sana</label>
+                        </div>  
+                    </div>
+                    </div>
+ 
+                <div>
+                    <label for="fotoUsuario">Foto de usuario</label>
+                    <input type="file" name="fotoUsuario" accept=".jpg, .png" id="fotoUsuario">                
+                </div>
+                <div>
+                    <div>
+                        <!-- <label>Ingresar Contraseña:</label> -->
+                        <input class="campoTexto" type="password" name="contraseña" placeholder="Ingresar contraseña">
+                    </div>
+                    <div>
+                        <!-- <label>Repetir Contraseña:</label> -->
+                        <input class="campoTexto" type="password" name="contraseñaConfirma" placeholder="Confirmar contraseña">
+                    </div>
+                </div>
+                <div class="botones">                
+                    <button class="botones-form boton-enviar" type="submit">Enviar</button>
+                    <button class="botones-form boton-cancelar" type="reset">Cancelar</button>
+                </div>
+                
     
             </form>
 
-        </div>
+<!--       </div>   -->
         
     </main>
     <footer>

@@ -59,20 +59,27 @@
         </div>     
     </header>    
     <main>
-        <form action="/registro" method="POST" class="log">
-            <p>
-                <!-- <label>Nombre de Usuario:</label> -->
-                <input type="text" name="usuario" placeholder="Nombre de usuario">
-            </p>
-            <p>
-                <!-- <label>Ingresar Contraseña:</label> -->
-                <input type="password" name="contraseña" placeholder="Ingresar contraseña">
-            </p>
-            <p>
-                <button type="submit">Enviar</button>
-            </p>
+<!--        <div class="forms">   -->
+            <form class="forms" action="/registro" method="POST" class="registro">
+                <div class="form-log">
+            <!--        <label>Nombre de Usuario:</label> -->
+                    <input class="campoTexto" type="text" name="usuario" placeholder="Nombre de usuario" id="usuario">
+                </div>                
+                <div class="form-log">
+                    <div>
+                        <!-- <label>Ingresar Contraseña:</label> -->
+                        <input class="campoTexto" type="password" name="contraseña" placeholder="Ingresar contraseña">
+                    </div>                    
+                </div>
+                <div class="botones">                
+                    <button class="botones-form boton-enviar" type="submit">Enviar</button>
+                </div>
+                
+    
+            </form>
 
-        </form>
+<!--       </div>   -->
+        
     </main>
     <footer>
         <section>

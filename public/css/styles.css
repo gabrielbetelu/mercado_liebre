@@ -68,7 +68,6 @@ header .buscador input {
 
 header .buscador .search i {
     background-color: #ffffff;
-/*    border: 2px solid #000000; */
     font-size: var(--main-tipo-descuentos);    
     color: var(--main-gris-oscuro);  
     position: absolute;
@@ -89,8 +88,6 @@ header nav {
     
 }
 
-
-
 header nav ul {
     width: 45%;
     margin: 0;
@@ -99,7 +96,6 @@ header nav ul {
     justify-content: space-evenly;  
     min-width: 370px; 
 }
-
 
 header nav ul li {
     list-style-type: none;
@@ -137,81 +133,152 @@ header div.burger-menu i {
 
 /*  --------------Formularios----------------*/
 
-main .forms {
+main form.forms {
     width: 100%;
-    display: flex;
-    justify-content: center;
-}
-main .forms form {
-    width: 80%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
+    align-items: center;
+    margin-top: 40px;
+    font-size: var(--main-tipo-texto);
 }
 
-main .forms form p {
+main form.forms div {
+    width: 90%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: left;    
+    align-items: left; 
+    margin: 0 0 20px 0; 
+    border-radius: 5%; 
 }
 
-main .forms form p label {
+main form.forms div label {
     text-align: left;
+    font-weight: 700;
     width: 100%;        
 }
 
-main .forms form div.usr {
-    margin: 0;
-    display: flex;
-    flex-direction: column;    
+main form.forms div .campoTexto {
+    padding: 5px 0;    
+    border: none;
 }
 
-main .forms form div.usr label {
+main form.forms div.usr {
+    margin: 0;    
+}
+
+main form.forms div.usr h3, main form.forms div.intereses h3  {
+    width: 100%;
+    margin: 0 0 10px 0;
     text-align: left;
 }
 
-main .forms form div.usr .user{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-           
-}
-
-main .forms form div {
-    display: flex;
-    justify-content: space-between; 
-    margin-left: 15px;
-}
-
-main .forms form div p {
-    text-align: left;
-    width: 90%;
-}
-
-
-
-/*
-main .forms form .intereses {
+main form.forms div.usr div.user{
     display: flex;
     flex-direction: column;
-    
+    align-items: flex-start;
+              
 }
 
-main .forms form .intereses  div {
-    display: block;
+main form.forms div.usr div.user div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+main .forms div.usr div.user div input {
+    width: 20px;
+    margin: 0;
+}
+
+main .forms div.usr div.user div label {
+    width: 60px;
+    font-weight: 400;
     text-align: left;
-    color: #39b54a;
 }
 
-*/
+main form.forms div.intereses div.opciones-intereses{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;           
+}
+
+main form.forms div.intereses div.opciones-intereses div {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+}
+
+main form.forms div.intereses div.opciones-intereses div label {
+    width: 60px;
+    font-weight: 400;
+    text-align: left;
+}
+
+main form.forms div.intereses div.opciones-intereses div input {
+    width: 20px;
+    margin: 0;
+}
+
+main form.forms div.botones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main form.forms div.botones .botones-form {
+    width: 35%;
+}
+
+main form.forms div.botones .boton-enviar {
+    background-color: var(--main-azul);
+    color: var(--main-gris-claro);
+}
+
+main form.forms div.botones .boton-cancelar {
+    background-color: red;
+    color: var(--main-gris-claro);
+}
+
+main form.forms div.form-log {
+    width: 70%;
+}
+
+main form.forms div.form-log div {
+    width: 100%;
+}
 
 
 /* --------------------------------------------------------*/
 
+
+/* ------------------------FOOTER--------------------------*/
+
+
 footer {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+footer div.footer-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+} 
+
+footer section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 footer i {
@@ -219,40 +286,69 @@ footer i {
     color: var(--main-celeste);
     margin-bottom: 10px;
 }
+
 footer h4 {
     font-size: var(--main-tipo-descripciones);
     font-weight: 700;
     color: var(--main-gris-oscuro);
+    margin: 0;
 }
 
 footer p {
     font-size: var(--main-tipo-texto);
     color: var(--main-gris-oscuro);
+    width: 75%;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+#copyright {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
 }
 
 footer .copyright {
+    width: 90%;
     font-size: var(--main-tipo-texto);
     text-align: left;
+    margin: 0 0 20px 0;
 }
+
+/* --------------------------------------------------------*/
+
+/* ------------------MAIN  HOME.HTML-----------------------*/
 
 
 main {
     text-align: center;
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100%;
     background-color: var(--main-gris-claro);
 }
 
 main section {
-    text-align: center;
-    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: var(--main-gris-claro);
 }
 
 main section .titulo {
-    width: 100%;
+    width: 90%;
     padding: 5px 0 10px 0;
     background-color: var(--main-gris-claro);
+}
+
+main section section.galeria {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 main .titulo h3 {
@@ -260,14 +356,8 @@ main .titulo h3 {
     font-size: var(--main-tipo-titulares);
     color: var(--main-gris-oscuro);
     margin: 0;
-    padding: 10px 0 10px 5%;
+    padding: 10px 0 10px 0;
     background-color: var(--main-gris-claro);
-}
-
-main section section.galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
 main section section.galeria article {
@@ -277,13 +367,14 @@ main section section.galeria article {
 
 main section article .articulo {
     margin: auto;
-    width: 90%;
     background-color: #ffffff;
 }
 
 main section article .articulo img {
     margin: auto;
     width: 90%;
+    height: 120%;
+    padding-bottom: 10px;
 }
 
 main section article .articulo .detalle-articulo {
@@ -325,8 +416,7 @@ main section article .articulo .detalle-articulo .circulo i {
 
 
 main section article .articulo .detalle-articulo i {
-    color: var(--main-verde);   
-
+    color: var(--main-verde);  
     display: block;
     font-size: 16px;    
     padding: 5px;
@@ -345,8 +435,9 @@ main section article .articulo .detalle-articulo i {
 
 main section article .articulo .detalle-articulo .precios {
     margin: 0;
-    padding: 10px 0;
+    padding: 0;
     width: 30%;
+    min-width: 80px;
     font-size: var(--main-tipo-precios);
     font-weight: 700;
     text-align: left;
@@ -354,7 +445,6 @@ main section article .articulo .detalle-articulo .precios {
 
 main section article .articulo .detalle-articulo .descuentos {
     margin: 0;
-    padding: 10px 0;
     color: var(--main-verde);
     font-size: var(--main-tipo-descuentos);
     font-weight: 700;
@@ -369,6 +459,13 @@ main section article .articulo .detalle-articulo .desc-producto {
     color: var(--main-gris-oscuro);
     font-size: var(--main-tipo-descuentos);
 }
+
+/* --------------------------------------------------------*/
+
+
+/* ----------------------RESPONSIVE------------------------*/
+
+
 
 @media (min-width : 361px) {
     main section article .articulo .detalle-articulo .desc-producto {
@@ -417,9 +514,34 @@ main section article .articulo .detalle-articulo .desc-producto {
         padding: 2px;
     }
 
+    main section .titulo {
+        width: 90%;
+    }
+
+    main section section.galeria {
+        width: 95%;
+    } 
+
     main section section.galeria article {
         width: 45%;
     } 
+
+    main section article .articulo .detalle-articulo .precios {
+        min-width: 80px;
+        padding: 0;
+    }
+    
+    main section article .articulo .detalle-articulo .descuentos {
+        padding: 0;
+    }
+
+    main form.forms div.usr div.user{
+        flex-direction: row;
+    }
+
+    main form.forms div.usr div.user div {
+        width: 50%;
+    }
     
 }
 
