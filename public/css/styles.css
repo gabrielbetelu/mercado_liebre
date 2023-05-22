@@ -236,6 +236,11 @@ main form.forms div.botones .botones-form {
 main form.forms div.botones .boton-enviar {
     background-color: var(--main-azul);
     color: var(--main-gris-claro);
+    transition: background-color 500ms;
+}
+
+main form.forms div.boton-login .boton-enviar:hover {
+    background-color: #0022AA;
 }
 
 main form.forms div.botones .boton-cancelar {
@@ -285,6 +290,11 @@ footer i {
     font-size: 2em;
     color: var(--main-celeste);
     margin-bottom: 10px;
+    transition: color 500ms;
+}
+
+footer i:hover {
+    color: var(--main-amarillo);
 }
 
 footer h4 {
@@ -368,6 +378,7 @@ main section section.galeria article {
 main section article .articulo {
     margin: auto;
     background-color: #ffffff;
+    transition: all 500ms;
 }
 
 main section article .articulo img {
@@ -375,6 +386,7 @@ main section article .articulo img {
     width: 90%;
     height: 120%;
     padding-bottom: 10px;
+    transition: all 500ms;
 }
 
 main section article .articulo .detalle-articulo {
@@ -419,7 +431,7 @@ main section article .articulo .detalle-articulo i {
     color: var(--main-verde);  
     display: block;
     font-size: 16px;    
-    padding: 5px;
+    padding: 10px 5px 0px 5px;
     width: 30px;
     height: 30px;
     border: solid 1px var(--main-verde);
@@ -428,7 +440,14 @@ main section article .articulo .detalle-articulo i {
     position: absolute;
     right: 20px;
     top: -20px;
+    transition: all 1000ms;
 }
+
+main section article .articulo .detalle-articulo i:hover {
+    transform: rotate(-90deg);
+}
+
+
 
 
 
@@ -454,11 +473,20 @@ main section article .articulo .detalle-articulo .descuentos {
 
 main section article .articulo .detalle-articulo .desc-producto {
     display: none;
+    visibility: hidden;
     margin: 0;
     padding: 10px 0;
     color: var(--main-gris-oscuro);
     font-size: var(--main-tipo-descuentos);
 }
+
+main section article .articulo:hover > .detalle-articulo .desc-producto {
+     display: block;
+     visibility: visible;
+}
+
+
+
 
 /* --------------------------------------------------------*/
 
@@ -468,14 +496,17 @@ main section article .articulo .detalle-articulo .desc-producto {
 
 
 @media (min-width : 361px) {
+    /*
     main section article .articulo .detalle-articulo .desc-producto {
         display: block; 
     }
-
-    main section article .articulo {
+    */
+    
+    main section article .articulo:hover {
         box-shadow: 0 0 4px 4px rgba(100, 100, 100, .5); 
     }
 
+  
     header nav {
         width: 100%;
         display: flex;
@@ -549,8 +580,21 @@ main section article .articulo .detalle-articulo .desc-producto {
     main section section.galeria article {
         width: 22.5%;
     } 
-    
+
+    footer div.footer-info {
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+
+    footer div.footer-info section {
+        width: 33.33%;
     }
+
+    footer div.footer-info section p {
+        width: 90%;
+    }
+    
+}
 
    
 
