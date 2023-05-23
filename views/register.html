@@ -74,13 +74,16 @@
                     <input class="campoTexto" type="email" name="emailUsuario" placeholder="E-mail">
                 </div>
                 <div>
-                    <label for="fechaNacimiento">Fecha de Nacimiento</label>
-                    <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+                    <!--        <label>Domicilio:</label> -->
+                            <input class="campoTexto" type="texto"  name="domicilio" placeholder="Domicilio" id="domicilio">
                 </div>
                 <div>
-            <!--        <label>Domicilio:</label> -->
-                    <input class="campoTexto" type="texto"  name="domicilio" placeholder="Domicilio" id="domicilio">
+                    <div class="form-fecha">
+                        <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                        <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+                    </div>  
                 </div>
+                              
                 <div class="usr">
                     <h3>Perfil de usuario</h3>
                     <div class="user">
@@ -126,7 +129,7 @@
                     <label for="fotoUsuario">Foto de usuario</label>
                     <input type="file" name="fotoUsuario" accept=".jpg, .png" id="fotoUsuario">                
                 </div>
-                <div>
+                <div class="form-contrasenias">
                     <div>
                         <!-- <label>Ingresar Contraseña:</label> -->
                         <input class="campoTexto" type="password" name="contraseña" placeholder="Ingresar contraseña">

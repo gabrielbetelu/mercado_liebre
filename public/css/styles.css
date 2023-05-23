@@ -62,17 +62,23 @@ header .buscador input {
     color: var(--main-gris-oscuro);
     border: none;
     border-radius: 5px;
-    width: 80%;
+    width: 100%;
     height: 35px;
 }
+
+header .buscador .search {
+    position: absolute;
+    right: 4%;
+}
+
+
 
 header .buscador .search i {
     background-color: #ffffff;
     font-size: var(--main-tipo-descuentos);    
     color: var(--main-gris-oscuro);  
-    position: absolute;
-    right: 10%;      
-    top: 7.5vw; 
+   
+
 }
 
 header .compra-en-cuotas {
@@ -144,13 +150,13 @@ main form.forms {
 }
 
 main form.forms div {
-    width: 90%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: left; 
     margin: 0 0 20px 0; 
-    border-radius: 5%; 
+    border-radius: 10%;
 }
 
 main form.forms div label {
@@ -159,9 +165,31 @@ main form.forms div label {
     width: 100%;        
 }
 
-main form.forms div .campoTexto {
-    padding: 5px 0;    
+main form.forms div input {
+    padding: 8px 0;    
     border: none;
+}
+
+main form.forms div .campoTexto {
+    box-shadow: 0 0 2px 2px rgba(100, 100, 100, .5);
+} 
+
+
+main form.forms div.form-fecha {
+    width: 60%;
+    align-self: flex-start;    
+}
+
+main form.forms div.form-fecha input {
+    box-shadow: 0 0 2px 2px rgba(100, 100, 100, .5);
+}
+
+
+
+
+main form.forms div.form-fecha label {
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
 main form.forms div.usr {
@@ -222,6 +250,13 @@ main form.forms div.intereses div.opciones-intereses div input {
     margin: 0;
 }
 
+main form.forms div.form-contrasenias {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 main form.forms div.botones {
     display: flex;
     flex-direction: row;
@@ -239,7 +274,7 @@ main form.forms div.botones .boton-enviar {
     transition: background-color 500ms;
 }
 
-main form.forms div.boton-login .boton-enviar:hover {
+main form.forms div.botones .botones-form:hover {
     background-color: #0022AA;
 }
 
@@ -443,14 +478,11 @@ main section article .articulo .detalle-articulo i {
     transition: all 1000ms;
 }
 
-main section article .articulo .detalle-articulo i:hover {
+/*
+main section article .articulo:hover .detalle-articulo i {
     transform: rotate(-90deg);
 }
-
-
-
-
-
+*/
 
 main section article .articulo .detalle-articulo .precios {
     margin: 0;
@@ -478,13 +510,15 @@ main section article .articulo .detalle-articulo .desc-producto {
     padding: 10px 0;
     color: var(--main-gris-oscuro);
     font-size: var(--main-tipo-descuentos);
+    transition: all .5s;
 }
 
-main section article .articulo:hover > .detalle-articulo .desc-producto {
+/*
+main section article .articulo:hover .detalle-articulo .desc-producto {
      display: block;
      visibility: visible;
 }
-
+*/
 
 
 
@@ -502,9 +536,11 @@ main section article .articulo:hover > .detalle-articulo .desc-producto {
     }
     */
     
+    /*
     main section article .articulo:hover {
         box-shadow: 0 0 4px 4px rgba(100, 100, 100, .5); 
     }
+    */
 
   
     header nav {
@@ -538,9 +574,14 @@ main section article .articulo:hover > .detalle-articulo .desc-producto {
         height: 25px;
     }
 
+    header .buscador .search {
+        position: absolute;
+        right: 10%;
+    }
+
     header .buscador .search i {
         position: unset; 
-        border: 1px solid #000000;
+    /*    border: 1px solid #000000;*/
         align-self: center;
         padding: 2px;
     }
@@ -580,6 +621,19 @@ main section article .articulo:hover > .detalle-articulo .desc-producto {
     main section section.galeria article {
         width: 22.5%;
     } 
+
+    main section article .articulo:hover .detalle-articulo i {
+        transform: rotate(-90deg);
+    }
+
+    main section article .articulo:hover .detalle-articulo .desc-producto {
+        display: block;
+        visibility: visible;
+   }
+
+   main section article .articulo:hover {
+    box-shadow: 0 0 4px 4px rgba(100, 100, 100, .5); 
+}
 
     footer div.footer-info {
         flex-direction: row;
