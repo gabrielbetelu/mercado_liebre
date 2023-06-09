@@ -71,7 +71,10 @@ header .buscador .search {
     right: 4%;
 }
 
-
+header .buscador .search button{
+    border: none;
+    padding: 0;
+}
 
 header .buscador .search i {
     background-color: #ffffff;
@@ -85,7 +88,7 @@ header .compra-en-cuotas {
     width: 100%;
     font-size: var(--main-tipo-texto);  
     font-weight: 700; 
-    color: var(--main-gris-oscuro); 
+    color: var(--main-azul); 
     text-align: center;
 }
 
@@ -109,7 +112,7 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: var(--main-gris-oscuro);
+    color: var(--main-azul);
     font-size: var(--main-tipo-texto);  
     font-weight: 700;
 }
